@@ -3,12 +3,12 @@ This is a toolbox for various testing and troubleshooting on Kubernetes.
 I use it on kubernetes to verify networking et.al.
 
 # Run In Kubernetes
-kubectl run -ti --rm toolbox-$RANDOM --image=ludwigprager/k8s-toolbox:1
+kubectl run -ti --rm toolbox-$RANDOM --image=ludwigprager/k8s-toolbox:latest
 
 # Run In Docker
 docker run -ti \
   --name toolbox \
-  ludwigprager/k8s-toolbox:1 \
+  ludwigprager/k8s-toolbox:latest \
   /bin/bash
 
 or
