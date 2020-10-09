@@ -6,15 +6,19 @@ I use it on kubernetes to verify networking et.al.
 kubectl run -ti --rm toolbox-$RANDOM --image=ludwigprager/k8s-toolbox:latest
 
 # Run In Docker
+```bash
 docker run -ti \
   --name toolbox \
   ludwigprager/k8s-toolbox:latest \
   /bin/bash
+```
 
 or
 
 docker exec -ti toolbox /bin/sh
 
 # Build The Image Yourself
+```bash
 source set-env.sh
 docker build -t $K8S_TOOLBOX_IMAGE .
+```
