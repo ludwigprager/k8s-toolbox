@@ -15,6 +15,6 @@ or
 
 docker exec -ti toolbox /bin/sh
 
-# Build The Image On A Raspberry Yourself
+# Build The Image Yourself
 source set-env.sh
 docker build -t $K8S_TOOLBOX_IMAGE .
