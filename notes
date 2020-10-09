@@ -1,0 +1,6 @@
+
+
+k run -ti tool --image=ludwigprager/net-tool-arm32v6:1 --restart=Never -- /bin/bash
+
+
+
